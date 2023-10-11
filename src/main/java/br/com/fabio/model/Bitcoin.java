@@ -1,4 +1,4 @@
-package model;
+package br.com.fabio.model;
 
 import java.time.LocalDate;
 

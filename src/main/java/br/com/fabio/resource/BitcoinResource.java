@@ -1,9 +1,9 @@
-package resource;
+package br.com.fabio.resource;
 
 import jakarta.inject.Inject;
-import model.Bitcoin;
+import br.com.fabio.model.Bitcoin;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
-import service.BitcoinService;
+import br.com.fabio.service.BitcoinService;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -20,8 +20,9 @@ public class BitcoinResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Bitcoin> listar() {
-        return  bitcoinService.listar();
+    public List<Bitcoin> listarBitcoinResource() {
+        //
+        return bitcoinService.listarBitcoinService();
     }
 
 }

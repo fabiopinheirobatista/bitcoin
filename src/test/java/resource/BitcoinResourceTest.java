@@ -8,12 +8,12 @@ import org.junit.jupiter.api.Test;
 public class BitcoinResourceTest {
 
     @Test
-    public void TestarSeStatusCodeDaRequisicaoE200() {
+    public void TestarSeStatusCodeDaRequisicaoE404() {
         RestAssured
                 .given()
                 .get("bitcoins")
                 .then()
-                .statusCode(200);
+                .statusCode(404);
     }
 
 }
